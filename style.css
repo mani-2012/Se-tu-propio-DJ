@@ -1,0 +1,18 @@
+h3,h5{
+    background-color: rgb(177, 112, 242);
+    color: white;
+}
+#dere{
+float: right;
+font-size: large;
+}
+#izqui{
+    float: left;
+    font-size: large;
+}
+canvas{
+    background-color: rgb(253, 243, 147);
+}
+button{
+    background-color: rgb(117, 186, 235);
+}
