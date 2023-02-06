@@ -29,12 +29,12 @@ function draw(){
    circle(derechaX,derechaY,20);
    circle(izquierdaX,izquierdaY,20);
    if (izquierdaY>250) {
-    music.setVolume(0);
-    document.getElementById("dere").innerHTML="VOLUMEN: 0";
+    music.setVolume(1);
+    document.getElementById("dere").innerHTML="VOLUMEN: 1";
 }
 else if (izquierdaY>200 && izquierdaY<250) {
     music.setVolume(2);
-    document.getElementById("dere").innerHTML="VOLUMEN: 1";
+    document.getElementById("dere").innerHTML="VOLUMEN: 1.8";
 }
 else if (izquierdaY>150 && izquierdaY<200) {
     music.setVolume(3);
@@ -51,6 +51,31 @@ else if (izquierdaY>50 && izquierdaY<100) {
 else if (izquierdaY>0 && izquierdaY<50) {
     music.setVolume(6);
     document.getElementById("dere").innerHTML="VOLUMEN: 5";
+}
+
+if (izquierdaY>250) {
+    music.rate(1);
+    document.getElementById("izqui").innerHTML="VOLUMEN: 1";
+}
+else if (izquierdaY>200 && izquierdaY<250) {
+    music.rate(2);
+    document.getElementById("izqui").innerHTML="VOLUMEN: 1.8";
+}
+else if (izquierdaY>150 && izquierdaY<200) {
+    music.rate(3);
+    document.getElementById("izqui").innerHTML="VOLUMEN: 2";
+}
+else if (izquierdaY>100 && izquierdaY<150) {
+    music.rate(4);
+    document.getElementById("izqui").innerHTML="VOLUMEN: 3";
+}
+else if (izquierdaY>50 && izquierdaY<100) {
+    music.rate(5);
+    document.getElementById("izqui").innerHTML="VOLUMEN: 4";
+}
+else if (izquierdaY>0 && izquierdaY<50) {
+    music.rate(6);
+    document.getElementById("izqui").innerHTML="VOLUMEN: 5";
 }
 }
 function empieza() {
